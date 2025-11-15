@@ -1,0 +1,50 @@
+body {
+    /* background-color: darkorchid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin:0;
+    background: darkorchid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.header_title {
+    color: rgb(0, 200, 255);
+    border: solid 2vh;
+    border-radius: 20vh;
+    padding: 5vh;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.User_input {
+    border: solid 1VH;
+    color: rgb(0, 200, 255);
+    margin: 20vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.User_input {
+    display: grid;
+    text-align: center;
+    grid-column: auto;
+    justify-content: center;
+    font-size: 1rem;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    font-size: 1 rem;
+}
+/* Respoonsivenes */
+@media (max-width:473px){ 
+    .User_input {
+        width:20%;
+    }
+    .header_title{
+        width: 30%;
+    }
+    .font { 
+        width:30%;
+    }
+}
