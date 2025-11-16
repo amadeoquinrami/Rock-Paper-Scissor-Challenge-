@@ -13,20 +13,29 @@
 
 <header class="header_title">
     <h1>Rock, Paper, Scissors!</h1>
+     <button type="reset" value="reset" class="btn rest">Reset<br></button>
 </header>
 
 <main>
 
-<form class="User_input"><br><br>
-    <h3>how to play </h3>
-    <label> Try to beat the computer </label><br>
-    <label for="userInput">Type<br>Rock , Paper, or Scissors</label><br>
+<section class="User_input"><br><br>
+    <h2>How to play </h3>
+    <h4> Try to beat the computer <h4><br>
+        <section class="slideshow">
+        <img src="images/rock.jpeg" alt="rock">
+        <img src="images/paper.jpeg" alt="paper">
+        <img src="images/scissors.jpeg" alt="scissors">
+    </section>
+    <h4 for="userInput">Type<br>Rock , Paper, or Scissors</h4><br>
     <input type="text" id="userInput" placeholder="Good Luck!"><br>
-    <label> please click"submit"</label>
-    <button type="button"  onclick="playGame()">submit</button><br>
-    <input type="reset" value="reset"><br>
-    <p id="result"></p>
-</form>
+    <label> Please<br>click"submit"</label>
+    <button type="button" class="btn submit" onclick="playGame()">submit</button><br>
+
+    
+    <section class="results">
+        <p id="result"></p>
+    </section>
+</section>
 </main>
 
 <footer>

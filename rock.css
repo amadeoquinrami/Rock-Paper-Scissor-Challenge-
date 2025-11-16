@@ -1,5 +1,4 @@
 body {
-    /* background-color: darkorchid; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,19 +11,36 @@ body {
 .header_title {
     color: rgb(0, 200, 255);
     border: solid 2vh;
-    border-radius: 20vh;
+    border-radius: 10vh;
     padding: 5vh;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
+.header_title {
+    background-image: url(images/rock.jpeg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+   
+}
+
 .User_input:hover {
     color: aqua;
 }
+#userInput {
+    border: solid aqua 2vh;
+    border-radius: 20vh;
+    padding: 5vh;
+    
+}
+
 .User_input {
-    border: solid 1VH;
+    border: solid 5VH;
+    border-radius: 10vh;
     color: rgb(0, 200, 255);
     margin: 20vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    contain: content;
 }
 .User_input {
     display: grid;
@@ -37,35 +53,75 @@ button {
     width: 100%;
     padding: 12px;
     margin-top: 12px;
-    font-size: 1rem;
+    font-size:3rem;
 }
-.button:hover{
-    background-color: black;
+button {
+   background-color: black;
+   height:fit-content;
+
+   color:white;
+   font-size: 5rem;
+
  }
-/* Respoonsivenes */
-/* @media screen (max-width: 582px) {
-body {
-    background-color: aqua;
-}     */
+ p {
+    display: block;
+    background-color: rgb(146, 134, 0);
+    margin-bottom: 10%;
+}
+.slideshow img {
+
+    position: relative;
+    animation: fade 10s infinite;
+    width: 30%;
+    height: 30%;
+    contain: content;
+}
+.slideshow img:nth-child(1) {animation-delay: 0s;}
+.slideshow img:nth-child(2) {animation-delay: 3s;}
+.slideshow img:nth-child(3) {animation-delay: 7s;}
+
+ @keyframes  fade {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    25% {opacity: 1;}
+ }
+
      @media screen and (min-width: 400px) {
   .header_title {
     border: solid 1vh;
     font-size: 1rem;
   }
   .User_input {
-    border: solid 2vh;
-    font-size:2rem; 
+    border: solid 1vh;
+   contain: content;
+    font-size:1rem; 
+  }
+   #userInput {
+    font-size: 10px;
+    margin:5vh;
+  }
+  .label {
+    border: solid 1vh;
+    font-size:1rem;
   }
 }
  @media screen and (min-width: 768px) {
+     .header_title {
+    border: solid 2vh;
+    font-size: 3rem;
+  }
   .User_input {
     border: solid 2vh;
     font-size:2rem; 
-    margin: 30vh;
+    
   }
   .label {
     border: solid 2vh;
     font-size:2rem;
+  }
+   #userInput {
+    font-size: 30px;
+    margin:35vh;
   }
 }
 @media screen and (min-width: 1627px) {
@@ -80,7 +136,11 @@ body {
   }
   .label {
     border: solid 4vh;
-    font-size:4opx;
+    font-size:40px;
+  }
+  #userInput {
+    font-size: 40px;
+    margin:10vh;
   }
 }
     
