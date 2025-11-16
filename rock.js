@@ -27,11 +27,3 @@ ${result}`;
 
 
 
-
-
-
-// document.getElementById("result").innerText = 
-// "You chose: " + userChoice + "\n" +
-// "Computer chose: " + computerChoice + "\n" +
-// result;
-

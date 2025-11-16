@@ -17,6 +17,9 @@ body {
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.User_input:hover {
+    color: aqua;
+}
 .User_input {
     border: solid 1VH;
     color: rgb(0, 200, 255);
@@ -34,17 +37,52 @@ button {
     width: 100%;
     padding: 12px;
     margin-top: 12px;
-    font-size: 1 rem;
+    font-size: 1rem;
 }
+.button:hover{
+    background-color: black;
+ }
 /* Respoonsivenes */
-@media (max-width:473px){ 
-    .User_input {
-        width:20%;
-    }
-    .header_title{
-        width: 30%;
-    }
-    .font { 
-        width:30%;
-    }
+/* @media screen (max-width: 582px) {
+body {
+    background-color: aqua;
+}     */
+     @media screen and (min-width: 400px) {
+  .header_title {
+    border: solid 1vh;
+    font-size: 1rem;
+  }
+  .User_input {
+    border: solid 2vh;
+    font-size:2rem; 
+  }
 }
+ @media screen and (min-width: 768px) {
+  .User_input {
+    border: solid 2vh;
+    font-size:2rem; 
+    margin: 30vh;
+  }
+  .label {
+    border: solid 2vh;
+    font-size:2rem;
+  }
+}
+@media screen and (min-width: 1627px) {
+    .header_title {
+    border: solid 3vh;
+    font-size: 4rem;
+  }
+  .User_input {
+    border: solid 3vh;
+    font-size:40px; 
+    margin: 40vh;
+  }
+  .label {
+    border: solid 4vh;
+    font-size:4opx;
+  }
+}
+    
+
+
